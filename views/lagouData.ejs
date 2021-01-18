@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <ul>
+        <% data.result.forEach( function ( item ) {%>
+    
+          <li>
+            <span> 职位名称: <%= item.positionName %> </span>  
+            <span> 薪资水平：<%= item.salary %> </span>
+            <span> 公司：<%= item.companyName %> </span>
+            <!-- <img src="https://static.jiawin.com/uploads/2016/05/121337027dbf4afd9fc9eb0.png" alt=""> -->
+          </li>
+        <%})%>
+      </ul>
+  </body>
+</html>
