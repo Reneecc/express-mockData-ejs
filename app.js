@@ -10,7 +10,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var shopcarRouter = require('./routes/shopcar');
 var lagouRouter = require('./routes/lagou');
-var localRouter = require('./routes/localData')
+var localRouter = require('./routes/localData');
+var ssrdemoRouter = require('./routes/ssrdemo')
 
 var app = express();
 
@@ -32,7 +33,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/shopcar', shopcarRouter);
 app.use('/lagouTest', lagouRouter);
-app.use('/localTest',localRouter)
+app.use('/localTest',localRouter);
+app.use('/ssrdemo',ssrdemoRouter)
 
 // catch 404 and forward to error handler  错误处理
 app.use(function (req, res, next) {
