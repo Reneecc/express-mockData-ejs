@@ -10,7 +10,7 @@ router.get('', function (req, res) {
         <title>SSR</title>
     </head>
     <body>
-        <p>hello world</p>
+        <p>hello world jjjjj</p>
     </body>
     </html>
     `);
